@@ -3,7 +3,7 @@ import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom";
 
 export default function ProductListing() {
-    const products = useSelector((state) => state?.allProducts?.products);
+    const products = useSelector((state: any) => state?.allProducts?.products);
     const navigate = useNavigate();
 
     return (
